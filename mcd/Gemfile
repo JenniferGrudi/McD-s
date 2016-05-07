@@ -1,0 +1,5 @@
+source "https://rubygems.org" #where we get gems
+ruby "2.2.3" #my version of ruby
+gem 'sinatra', '~>1.4.7' #my version of sinatra
+
+ 

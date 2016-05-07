@@ -6,11 +6,19 @@ get '/' do
 end
 
 post '/order' do
-	order = params[:order]
-	# correct = params[:correct]
-	
-	erb :correct_order, :locals => {:order => order}
+order = params[:order]
+
+	erb :correct_order, :locals => {:order => order, :correct => correct}
 end 
+
+post '/correct_order' do
+correct = params[:correct]	
+ 
+ if correct == "Yes"
+	 	"Give me $$$"
+	else
+		erb :mcd_orders	
+	end		
 
 
 	
