@@ -1,0 +1,17 @@
+<h2>You have ordered:</h2> 
+<br>
+<%order.each do |value|%>
+<%=value%><br>
+<%end%>	
+
+<br>
+<h2>Is this correct?</h2>
+<br>
+
+<form action="/correct" method="post">
+	<input type = "radio" name = "correct" value = "Yes"> Yes
+	<br/>
+	<input type = "radio" name = "correct" value = "No"> No
+	<br/>
+	<input type="submit">
+</form>
