@@ -19,6 +19,7 @@ correct = params[:correct]
 	else
 		erb :mcd_orders	
 	end		
+end
 
 
 	
